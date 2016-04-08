@@ -3,7 +3,7 @@
 -- Drop tournament database if it exists
 DROP DATABASE IF EXISTS tournament;
 
--- Create Database 'Tournament'
+-- Create Database 'tournament'
 CREATE DATABASE tournament;
 
 -- Connect to the tournament database
@@ -14,13 +14,13 @@ DROP TABLE IF EXISTS player CASCADE;
 DROP tABLE IF EXISTS match CASCADE;
 DROP VIEW IF EXISTS standings CASCADE;
 
--- Creates player table
+-- Creates the player table
 CREATE TABLE player(
   player_id serial PRIMARY KEY,
   player_name text
 );
 
--- Creates match table with FK to player
+-- Creates match table with foreign key to player
 CREATE TABLE match (
   match_id serial PRIMARY KEY,
   winner INTEGER,
