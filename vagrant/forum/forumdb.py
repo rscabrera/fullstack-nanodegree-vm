@@ -5,7 +5,7 @@ import psycopg2
 import time
 
 ## Database connection
-DB = []
+#DB = []
 
 ## Get posts from database.
 def GetAllPosts():
